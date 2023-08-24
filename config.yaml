@@ -1,17 +1,17 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  title: 'Status of aloneg services'
+  url: 'https://status.aloneg.ovh' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 21 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  allmonitorsOperational: 'OK'
+  notAllmonitorsOperational: 'Występują problemy'
+  monitorLabelOperational: 'OK'
+  monitorLabelNotOperational: 'DOWN'
+  monitorLabelNoData: 'Brak danych'
+  dayInHistogramNoData: 'Brak danych'
+  dayInHistogramOperational: 'OK'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
