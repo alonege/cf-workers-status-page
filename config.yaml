@@ -15,6 +15,15 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: git  # unique identifier
+    name: GIT
+    description: 'GIT' # default=empty
+    url: 'https://git.aloneg.ovh/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
   - id: fd1 # unique identifier
     name: DND
     description: 'D&D serwer' # default=empty
