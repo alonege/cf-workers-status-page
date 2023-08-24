@@ -2,7 +2,7 @@ settings:
   title: 'Status Page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 21 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -15,25 +15,56 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: fd1 # unique identifier
+    name: DND
+    description: 'D&D serwer' # default=empty
+    url: 'https://dnd.aloneg.ovh/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+  - id: fd2 # unique identifier
+    name: WH
+    description: 'WarHammer serwer' # default=empty
+    url: 'https://wh.aloneg.ovh/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
+  - id: fd3 # unique identifier
+    name: SCP
+    description: 'SCP serwer' # default=empty
+    url: 'https://scp.aloneg.ovh/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: fd4 # unique identifier
+    name: COC
+    description: 'COC serwer' # default=empty
+    url: 'https://coc.aloneg.ovh/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: ha # unique identifier
+    name: HA
+    description: 'HA' # default=empty
+    url: 'https://ha.aloneg.ovh/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: drive  # unique identifier
+    name: DRIVE
+    description: 'drive' # default=empty
+    url: 'https://drive.aloneg.ovh/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
