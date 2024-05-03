@@ -63,7 +63,7 @@ monitors:
   - id: ha # unique identifier
     name: HA
     description: 'HA' # default=empty
-    url: 'https://ha.rpg.studentdebil.com/' # URL to fetch
+    url: 'https://ha.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -72,7 +72,7 @@ monitors:
   - id: drive  # unique identifier
     name: DRIVE
     description: 'drive' # default=empty
-    url: 'https://drive.rpg.studentdebil.com/' # URL to fetch
+    url: 'https://drive.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
