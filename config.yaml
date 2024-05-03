@@ -1,6 +1,6 @@
 settings:
   title: 'Status of aloneg services'
-  url: 'https://status.aloneg.ovh' # used for Slack messages
+  url: 'https://status.studentdebil.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 21 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -18,7 +18,7 @@ monitors:
   - id: git  # unique identifier
     name: GIT
     description: 'GIT' # default=empty
-    url: 'https://git.aloneg.ovh/' # URL to fetch
+    url: 'https://git.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -27,7 +27,7 @@ monitors:
   - id: fd1 # unique identifier
     name: DND
     description: 'D&D serwer' # default=empty
-    url: 'https://dnd.aloneg.ovh/' # URL to fetch
+    url: 'https://dnd.rpg.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -36,7 +36,7 @@ monitors:
   - id: fd2 # unique identifier
     name: WH
     description: 'WarHammer serwer' # default=empty
-    url: 'https://wh.aloneg.ovh/' # URL to fetch
+    url: 'https://wh.rpg.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -45,7 +45,7 @@ monitors:
   - id: fd3 # unique identifier
     name: SCP
     description: 'SCP serwer' # default=empty
-    url: 'https://scp.aloneg.ovh/' # URL to fetch
+    url: 'https://scp.rpg.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -54,7 +54,7 @@ monitors:
   - id: fd4 # unique identifier
     name: COC
     description: 'COC serwer' # default=empty
-    url: 'https://coc.aloneg.ovh/' # URL to fetch
+    url: 'https://coc.rpg.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -63,7 +63,7 @@ monitors:
   - id: ha # unique identifier
     name: HA
     description: 'HA' # default=empty
-    url: 'https://ha.aloneg.ovh/' # URL to fetch
+    url: 'https://ha.rpg.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -72,7 +72,7 @@ monitors:
   - id: drive  # unique identifier
     name: DRIVE
     description: 'drive' # default=empty
-    url: 'https://drive.aloneg.ovh/' # URL to fetch
+    url: 'https://drive.rpg.studentdebil.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
